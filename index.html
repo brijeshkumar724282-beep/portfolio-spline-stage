@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mara Voss | Visual Stage Portfolio</title>
+<meta name="description" content="Portfolio template for visual and frontend creators. 3D stage hero, work gallery, services and contact.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="navInner">
+    <a href="#hero" class="brand" aria-label="Back to top">
+      <span class="brandMark" aria-hidden="true"></span>
+      <span class="brandText">Mara Voss</span>
+    </a>
+    <nav class="navLinks" id="navLinks" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btnSmall btnNavCta">Start a project</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="hero">
+  <canvas id="stageCanvas" aria-hidden="true"></canvas>
+  <div class="heroGrid">
+    <div class="heroCopy">
+      <div class="pill" role="status">
+        <span class="pillDot" aria-hidden="true"></span>
+        Available for new projects in 2026
+      </div>
+      <h1>Interfaces with depth, motion and clarity</h1>
+      <p class="lede">I design and build vivid web experiences for brands that want to stand out. This template shows a 3D stage hero, gallery, services and contact in one fast static page.</p>
+      <div class="heroCta">
+        <a href="#work" class="btn btnPrimary">View selected work</a>
+        <a href="#contact" class="btn btnGhost">Book a call</a>
+      </div>
+      <dl class="heroStats">
+        <div><dt>48+</dt><dd>Projects shipped</dd></div>
+        <div><dt>09</dt><dd>Design awards</dd></div>
+        <div><dt>06y</dt><dd>Crafting for web</dd></div>
+      </dl>
+    </div>
+
+    <div class="stage" id="stage" aria-hidden="true">
+      <div class="stageFloor"></div>
+      <div class="cube cubeA layer" data-depth="34">
+        <div class="face faceFront"></div>
+        <div class="face faceTop"></div>
+        <div class="face faceSide"></div>
+      </div>
+      <div class="cube cubeB layer" data-depth="58">
+        <div class="face faceFront"></div>
+        <div class="face faceTop"></div>
+        <div class="face faceSide"></div>
+      </div>
+      <div class="cube cubeC layer" data-depth="22">
+        <div class="face faceFront"></div>
+        <div class="face faceTop"></div>
+        <div class="face faceSide"></div>
+      </div>
+      <div class="stageCard cardOne layer" data-depth="46">
+        <span class="stageCardBar"></span>
+        <span class="stageCardLine long"></span>
+        <span class="stageCardLine"></span>
+        <span class="stageCardRow"><i></i><i></i><i></i></span>
+      </div>
+      <div class="stageCard cardTwo layer" data-depth="70">
+        <span class="stageAvatar"></span>
+        <span class="stageCardLine long"></span>
+        <span class="stageCardLine short"></span>
+        <span class="stageBtn"></span>
+      </div>
+      <div class="orb orbOne layer" data-depth="80"></div>
+      <div class="orb orbTwo layer" data-depth="18"></div>
+      <div class="ring layer" data-depth="40"></div>
+    </div>
+  </div>
+  <a href="#work" class="scrollHint">Scroll to explore</a>
+</section>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="wrap">
+    <p class="kicker reveal">Selected work</p>
+    <div class="sectionHead reveal">
+      <h2>A gallery built for visual storytelling</h2>
+      <p>Click any card to open details. Every thumb below is pure CSS art, no image files needed.</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <article class="workCard reveal" tabindex="0" data-title="Lumen Commerce" data-tag="Web design plus storefront build" data-desc="Full storefront for a lighting brand. 3D product hero, fast checkout flow, custom CMS blocks. Result was a 38 percent lift in checkout completion." data-stack="HTML, CSS, JS, Shopify">
+        <div class="thumb thumbOne" aria-hidden="true"><span class="tCube"></span><span class="tBar"></span><span class="tDot"></span></div>
+        <div class="workBody"><p class="workTag">Ecommerce</p><h3>Lumen Commerce</h3><p class="workMeta">Storefront plus 3D hero</p></div>
+      </article>
+      <article class="workCard reveal" tabindex="0" data-title="Orbit Studio" data-tag="Creative site plus motion system" data-desc="Portfolio site for a motion studio. Scroll driven scenes, reusable card system, case study template. Page load kept under one second on mobile." data-stack="HTML, CSS, JS, GSAP style motion">
+        <div class="thumb thumbTwo" aria-hidden="true"><span class="tRing"></span><span class="tCore"></span><span class="tMini"></span></div>
+        <div class="workBody"><p class="workTag">Creative site</p><h3>Orbit Studio</h3><p class="workMeta">Motion plus case layout</p></div>
+      </article>
+      <article class="workCard reveal" tabindex="0" data-title="Pulse Dashboard" data-tag="Product UI plus data views" data-desc="Analytics dashboard for a fitness app. Card based layout, clear charts, dark theme tuned for long sessions. Support tickets about charts dropped by half." data-stack="HTML, CSS, JS, Charts">
+        <div class="thumb thumbThree" aria-hidden="true"><span class="tCol c1"></span><span class="tCol c2"></span><span class="tCol c3"></span><span class="tCol c4"></span></div>
+        <div class="workBody"><p class="workTag">Product UI</p><h3>Pulse Dashboard</h3><p class="workMeta">Charts plus dark theme</p></div>
+      </article>
+      <article class="workCard reveal" tabindex="0" data-title="Fern Journal" data-tag="Editorial layout plus blog kit" data-desc="Editorial template for a slow living journal. Big type, calm spacing, reading progress and bookmarking. Built as a reusable static theme." data-stack="HTML, CSS, JS">
+        <div class="thumb thumbFour" aria-hidden="true"><span class="tLines"></span><span class="tBlock"></span></div>
+        <div class="workBody"><p class="workTag">Editorial</p><h3>Fern Journal</h3><p class="workMeta">Blog kit plus reading UI</p></div>
+      </article>
+      <article class="workCard reveal" tabindex="0" data-title="Arcade Landing" data-tag="Launch page plus playful 3D" data-desc="Launch page for an indie game. Floating CSS shapes, countdown, waitlist form with validation. Waitlist grew to 4000 in three weeks." data-stack="HTML, CSS, JS">
+        <div class="thumb thumbFive" aria-hidden="true"><span class="tTri"></span><span class="tSq"></span><span class="tCir"></span></div>
+        <div class="workBody"><p class="workTag">Launch page</p><h3>Arcade Landing</h3><p class="workMeta">Playful shapes plus signup</p></div>
+      </article>
+      <article class="workCard reveal" tabindex="0" data-title="Nook Booking" data-tag="Booking flow plus local brand" data-desc="Booking site for a photo studio. Date picker UI, package cards, simple admin view. Double bookings went to zero after launch." data-stack="HTML, CSS, JS">
+        <div class="thumb thumbSix" aria-hidden="true"><span class="tCal"></span><span class="tCalRow"></span></div>
+        <div class="workBody"><p class="workTag">Booking flow</p><h3>Nook Booking</h3><p class="workMeta">Dates plus packages</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT + TOOLS -->
+<section class="section sectionAlt" id="about">
+  <div class="wrap aboutGrid">
+    <div class="reveal">
+      <p class="kicker">About</p>
+      <h2>Designer who ships clean code</h2>
+      <p class="muted">I blend layout, motion and code so ideas look great and run fast. My sweet spot is marketing sites, portfolios and product landing pages with a sense of place and play.</p>
+      <ul class="checkList">
+        <li>Motion with purpose, never noise</li>
+        <li>Accessible markup and keyboard support</li>
+        <li>Fast static pages that rank and convert</li>
+      </ul>
+      <div class="aboutCta">
+        <a href="#contact" class="btn btnPrimary">Work with me</a>
+        <a href="#services" class="btn btnGhost">See services</a>
+      </div>
+    </div>
+    <div class="toolsCard reveal">
+      <h3>Toolbox</h3>
+      <div class="toolsGrid">
+        <span>Figma</span><span>HTML</span><span>CSS 3D</span><span>JavaScript</span>
+        <span>Canvas</span><span>Blender</span><span>Spline</span><span>Notion</span>
+        <span>Git</span><span>Netlify</span><span>Pages</span><span>SEO basics</span>
+      </div>
+      <div class="quoteBox">
+        <p>“Mara turned our vague brief into a site clients mention on sales calls.”</p>
+        <p class="quoteName">Lena Park, Founder at Orbit</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="wrap">
+    <p class="kicker reveal">Services</p>
+    <div class="sectionHead reveal">
+      <h2>Simple plans for clear outcomes</h2>
+      <p>Pick a fixed scope to start fast, then extend as your needs grow.</p>
+    </div>
+    <div class="priceGrid">
+      <article class="priceCard reveal">
+        <p class="priceTag">Starter</p>
+        <p class="price">$900</p>
+        <p class="muted">One page launch in two weeks</p>
+        <ul><li>Single landing page</li><li>Copy polish plus layout</li><li>Contact form setup</li><li>Launch checklist</li></ul>
+        <a href="#contact" class="btn btnGhost btnBlock" data-plan="Starter">Choose Starter</a>
+      </article>
+      <article class="priceCard featured reveal">
+        <p class="priceTag">Studio</p>
+        <p class="price">$2400</p>
+        <p class="muted">Full portfolio or brand site</p>
+        <ul><li>Up to six pages</li><li>Motion plus 3D stage hero</li><li>Blog or gallery setup</li><li>SEO plus speed pass</li></ul>
+        <a href="#contact" class="btn btnPrimary btnBlock" data-plan="Studio">Choose Studio</a>
+      </article>
+      <article class="priceCard reveal">
+        <p class="priceTag">Partner</p>
+        <p class="price">$480</p>
+        <p class="muted">Monthly design plus build care</p>
+        <ul><li> priority updates</li><li>New sections on demand</li><li>Monthly speed review</li><li>Direct chat support</li></ul>
+        <a href="#contact" class="btn btnGhost btnBlock" data-plan="Partner">Choose Partner</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section sectionAlt" id="contact">
+  <div class="wrap contactGrid">
+    <div class="reveal">
+      <p class="kicker">Contact</p>
+      <h2>Tell me about your project</h2>
+      <p class="muted">Share a few details and I will reply within two business days with next steps and a clear quote.</p>
+      <div class="contactRows">
+        <div><p class="label">Email</p><p>hello@maravoss.studio</p></div>
+        <div><p class="label">Studio</p><p>Berlin plus remote worldwide</p></div>
+        <div><p class="label">Socials</p><p>Dribbble, Behance, GitHub, LinkedIn</p></div>
+      </div>
+    </div>
+    <form class="formCard reveal" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" placeholder="Ada Lovelace" autocomplete="name">
+        <small class="error" id="errName"></small>
+      </div>
+      <div class="field">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email">
+        <small class="error" id="errEmail"></small>
+      </div>
+      <div class="field">
+        <label for="budget">Project budget</label>
+        <select id="budget" name="budget">
+          <option value="">Select a range</option>
+          <option>Under $1000</option>
+          <option>$1000 to $2500</option>
+          <option>$2500 to $6000</option>
+          <option>$6000 plus</option>
+        </select>
+        <small class="error" id="errBudget"></small>
+      </div>
+      <div class="field">
+        <label for="message">Project details</label>
+        <textarea id="message" name="message" rows="4" placeholder="Goals, timeline, links you admire"></textarea>
+        <small class="error" id="errMessage"></small>
+      </div>
+      <button type="submit" class="btn btnPrimary btnBlock">Send message</button>
+      <p class="formNote" id="formNote" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footerGrid">
+    <div>
+      <p class="brandText">Mara Voss</p>
+      <p class="muted small">Visual creator crafting deep, playful web stages.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+    <p class="muted small">© <span id="year">2026</span> Mara Voss. Template free to reuse.</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modalBack" id="modalBack" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modalClose" id="modalClose" aria-label="Close details">×</button>
+    <div class="modalThumb" id="modalThumb" aria-hidden="true"></div>
+    <p class="workTag" id="modalTag"></p>
+    <h3 id="modalTitle"></h3>
+    <p class="muted" id="modalDesc"></p>
+    <p class="modalStack" id="modalStack"></p>
+    <a href="#contact" class="btn btnPrimary" id="modalCta">Start something similar</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
